@@ -1,7 +1,42 @@
 /*début de section test */
+@font-face {
+	font-family: "starjedi";
+	src: url('Starjedi.ttf');
+}
 
+@font-face {
+	font-family: "StarWarslogo";
+	src: url('StarWarslogo.ttf')
+}
+
+@font-face {
+	font-family: "starjout";
+	src: url('Starjout.ttf')
+}
+
+.passerIntro{
+
+	padding-top: 70px;
+	padding-left: 0px;
+	padding-right: 0px;
+	float: left;
+	margin: auto;
+	text-align: center;
+	font-family: "starjedi", sans-serif;
+}
+
+.titreGroupe p{
+font-family: "starjout";
+color: #EBD71C;
+font-size: 3rem;
+}
+
+.invisible{
+	height: 100px;
+}
 
 /*fin de section test */
+
 
 body{
 	background-color: #000;
@@ -24,6 +59,10 @@ body, html{
 	min-height: 100vh;
 }
 
+.bla {
+	margin-bottom: 100px;
+}
+
 /* DEBUT Partie animation vignettes */
 
 .cardimg{
@@ -32,23 +71,26 @@ body, html{
 	margin-bottom: 20px;
 }
 
-#cf {
+.cf {
 	position:relative;
 	height:200px;
 	width:200px;
 	margin:0 auto;
-  }
+	border: #EBD71C solid 3px;	
+}
+
   
-  #cf img {
+.cf img {
 	position:absolute;
 	left:0;
 	-webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
 	-o-transition: opacity 1s ease-in-out;
 	transition: opacity 1s ease-in-out;
+	padding: 7px;
   }
   
-  #cf img.top:hover {
+.cf img.top:hover {
 	opacity:0;
   }
 
@@ -256,6 +298,8 @@ body, html{
 	  animation: scroll 110s linear 2s forwards;
 	}
 	}
+
+	/* FIN DE STARWARS */
 	
   /*  Effets de bordure  */
 
@@ -290,24 +334,26 @@ body, html{
 		opacity: 1;
 	}
 
+	/* FIN EFFET BORDURE */
+
 	/* MODALES */	/* MODALES */	/* MODALES */	/* MODALES */	/* MODALES */	/* MODALES */	/* MODALES */	/* MODALES *
 	#E0D3B1 clair
 	#8C836D	foncé
 	*/
 
-	@media(min-width:992px){
-		.blabla{
+@media(min-width:992px){
+	.blabla{
 
-			width: 45%;
-			margin: auto;
-			text-align: center;
-		}
-
-
+		width: 45%;
+		margin: auto;
+		text-align: center;
 	}
+}
 
-.bla {
-	margin-bottom: 100px;
+.modal-header
+{
+		border-bottom: 0px;
+		padding-bottom: 0px;
 }
 
 .blabla{
@@ -318,10 +364,21 @@ body, html{
 	text-align: center;
 }
 
-	.modal-header
-{
-		border-bottom: 0px;
-		padding-bottom: 0px
+
+.h3 {
+	font-weight: bold;
+	font-size: 2.5em;
+	padding-bottom: 0px;
+	padding-top: 10px;
+	width: 100%;
+	font-family: "starjedi", sans-serif;
+	color: rgb(92, 86, 71);
+}
+
+.listPerso li{
+
+	list-style-type: none;
+	display: inline;
 }
 
 .modal-content{
@@ -329,73 +386,45 @@ body, html{
 	margin-top: 20px;
 	background-color: #E0D3B1;
 	color: #8C836D;
-	border: 10px outset #8C836D;
+	border: 2px solid #8C836D;
+	border-radius: 5%;
 }
-
-.stw-modal-title 
-{
-    font-weight: bold;
-    font-size: 2.5em;
-		text-align: center;
-		padding-bottom: 0px;
-		padding-top: 10px;
-}
-
-.stw-modal-subtitle 
-{
-  font-style: italic;
-  font-size: 1,5em;
-  text-align: center;
-}
-
-.stw-section-title 
-{
-    font-size: 1.5em;
-    text-align: center;
-}
-hr
-{
-   align-items:center;
-		width:50%;
-		border-top: 2px double #8C836D;
-		}
-
-.blockhead h2{
-
-	text-transform: uppercase
-
+hr{
+	align-items:center;
+	width:50%;
+	border-top: 2px double #8C836D;
 }
 
 
-h4 
+.h4 
 {
 text-align: center;   
 font-size: 1em; 
-font-weight: bold;
+font-family: "starjedi", sans-serif;
 }
 
-.stw-section-title{
-
-	font-size: 1em;
+.logoSW{
+	font-family: "StarWarslogo", sans-serif;
+	font-size: 3rem;
+	color: rgb(92, 86, 71);
 }
 
+.logoSWbutton{
+	font-family: "StarWarslogo", sans-serif;
+	font-size: 1.5rem;
+	color: rgb(92, 86, 71);
+}
 
-.text
-{
-text-align: center;
+.logoSWtitle{
+	font-family: "StarWarslogo", sans-serif;
+	font-size: 3rem;
+	color: #EBD71C;
 }
 
 p{
 
 	font-size: 1em;
 }
-
-.test1 
-{
-text-align: center;
-font-size: 1vw;
-font-weight: bold; 
- }
 
 .logo
 {
@@ -427,7 +456,7 @@ font-weight: bold;
 .close {
 
 	background-color: #8C836D;
-	border: 1px outset #8C836D;
+	border: 1px solid #8C836D;
 }
 
 .btn-sm{
@@ -439,4 +468,52 @@ font-weight: bold;
 	border: none;
 }
 
+.badge-pill{
+	font-size: 1rem;
+	padding-top: 6px;
+}
+
+.tagHtml{
+	background-color: rgb(225, 34, 0);
+	color: #fff;
+}
+.tagCss{
+	background-color: #009DE1;
+	color: #fff;
+}
+.tagJS{
+	background-color: rgb(225, 210, 0);
+	color: rgb(26, 25, 22);
+}
+.tagJava{
+	background-color: rgb(225, 0, 49);
+	color: rgb(47, 159, 207);
+}
+.tagReact{
+	background-color: rgb(26, 25, 22);
+	color: rgb(0, 210, 225);
+}
+.tagBootstrap{
+	background-color: rgb(123, 14, 133);
+	color: #fff;
+}
+.tagNode{
+	background-color: rgb(12, 145, 63);
+	color: rgb(26, 25, 22);
+}
+
 	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */
+
+	/* test balise hr */
+	hr {
+    border: 0;
+    height: 1px;
+    background: #63C;
+    background-image: -webkit-linear-gradient(left, #C9F, #63C, #C9F);
+    background-image: -moz-linear-gradient(left, #C9F, #63C, #C9F);
+    background-image: -ms-linear-gradient(left, #C9F, #63C, #C9F);
+    background-image: -o-linear-gradient(left, #C9F, #63C, #C9F);
+}
+
+
+/* TEST VIGNETTES   */

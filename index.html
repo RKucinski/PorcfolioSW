@@ -85,6 +85,10 @@
 </object>
 -->
 
+  <div class="container-fluid passerIntro"> 
+        <a href="#ancre"><button type="button" class="btn btn-outline-info">Passer l'introduction</button></a>
+  </div> 
+
   <div class="star-wars-intro">
 
         <!-- Blue Intro Text -->
@@ -108,7 +112,7 @@
                 <p class="content-body">
                   After days of really (really !) hard work at the Wild School, Group 6 ended up making a new version of its "Porc Folio".<br>
                   This project is presented by:<br/><br/>
-                  Kucinski Roman</br>Mabrouk Nadim<br/>Marchand Loïc<br/>Margerit Frederic<br/>Miquel Mathieu<br/>Martinez Franck
+                  Kucinski Roman<br/>Mabrouk Nadim<br/>Marchand Loïc<br/>Margerit Frederic<br/>Miquel Mathieu<br/>Martinez Franck
                 </p>
       
                 <!-- button or link or whatever -->
@@ -122,43 +126,59 @@
 
     <!-- DEBUT partie Portfolio -->
 
-<div class="container-fluid test d-flex align-items-center" id="mainbg">
+<div class="container-fluid test d-flex flex-column align-items-center" id="mainbg">
+    <div class="container invisible" id="ancre"></div>
+    <div class="container titreGroupe">
+        <p class="h1 text-center"><span class="logoSWtitle">S</span> Tatooine's Gardians <span class="logoSWtitle"> S</span></p>
+    </div>
     <div class="container d-flex justify-content-center bla">
         <div class="row d-flex justify-content-center">
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center cardimg">
-                <div id="cf">
-                    <img class="img-fluid bottom rounded-circle" src="photos/roman.jpg" alt="Tête de Roman">
-                    <img class="img-fluid top rounded-circle" id="ancre" src="Images/roman-bb8.png" data-toggle="modal" data-target="#monModal" />
+                <div class="cf rounded-circle">
+                    <div class="buffer rounded-circle">
+                        <img class="img-fluid bottom rounded-circle" src="photos/roman.jpg" alt="Tête de Roman">
+                        <img class="img-fluid top rounded-circle" src="Images/roman-bb8.png" data-toggle="modal" data-target="#monModal" />
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center cardimg">
-                <div id="cf" class="">
-                    <img class="img-fluid bottom rounded-circle" src="photos/nadim.jpg" alt="Tête de Nadim">
-                    <img class="img-fluid top rounded-circle" src="Images/nadim-boba-fett.png" />
+                <div class="cf rounded-circle">
+                    <div class="buffer rounded-circle">
+                        <img class="img-fluid bottom rounded-circle" src="photos/nadim.jpg" alt="Tête de Nadim">
+                        <img class="img-fluid top rounded-circle" src="Images/nadim-boba-fett.png" data-toggle="modal" data-target="#monModal" />
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center cardimg">
-                <div id="cf">
-                    <img class="img-fluid bottom rounded-circle" src="photos/loic.jpg" alt="Tête de Loic">
-                    <img class="img-fluid top rounded-circle" src="Images/loic-darth-vader.png" />
+                <div class="cf rounded-circle">
+                    <div class="buffer rounded-circle">
+                        <img class="img-fluid bottom rounded-circle" src="photos/loic.jpg" alt="Tête de Loic">
+                        <img class="img-fluid top rounded-circle" src="Images/loic-darth-vader.png" data-toggle="modal" data-target="#monModal" />
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center cardimg">
-                <div id="cf">
-                    <img class="img-fluid bottom rounded-circle" src="photos/fred.jpg" alt="Tête de Fred">
-                    <img class="img-fluid top rounded-circle" src="Images/fred-The_emperor.png" />
+                <div class="cf rounded-circle">
+                    <div class="buffer rounded-circle">
+                        <img class="img-fluid bottom rounded-circle" src="photos/fred.jpg" alt="Tête de Frederic">
+                        <img class="img-fluid top rounded-circle" src="Images/fred-The_emperor.png" data-toggle="modal" data-target="#monModal" />
+                    </div>
+                </div>
+            </div>            
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center cardimg">
+                <div class="cf rounded-circle">
+                    <div class="buffer rounded-circle">
+                        <img class="img-fluid bottom rounded-circle" src="photos/mathieu.jpg" alt="Tête de Matthieu">
+                        <img class="img-fluid top rounded-circle" src="Images/mathieu-chewbacca.png" data-toggle="modal" data-target="#monModal" />
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center cardimg">
-                <div id="cf">
-                    <img class="img-fluid bottom rounded-circle" src="photos/mathieu.jpg" alt="Tête de Matthieu">
-                    <img class="img-fluid top rounded-circle" src="Images/mathieu-chewbacca.png" />
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center cardimg">
-                <div id="cf">
-                    <img class="img-fluid bottom rounded-circle" src="photos/franck.jpg" alt="Tête de Franck">
-                    <img class="img-fluid top rounded-circle" src="Images/franck-yoda.png" />
+                <div class="cf rounded-circle">
+                    <div class="buffer rounded-circle">
+                        <img class="img-fluid bottom rounded-circle" src="photos/franck.jpg" alt="Tête de Franck">
+                        <img class="img-fluid top rounded-circle" src="Images/franck-yoda.png" data-toggle="modal" data-target="#monModal" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,56 +187,68 @@
 
     <!-- FIN partie Portfolio -->
 
-    <!-- DEBUT  -->
-   <div class="container"> 
-    <div id="monModal" class="modal fade">
-	    	<div class="modal-dialog blabla no-gutters">
-	        	<div class="modal-content">
-	           	 	<div class="modal-header d-flex align-items-center">
-                        <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
-                        <div class="container blockhead">
-	                	<h2 class="modal-title stw-modal-title">Némarre Jean</h2><br>
-                        </div>
-	           		</div>
-                <hr>
-	            	<h4 class="stw-section-title">PROFILE</h4>
-	            	<div class="logo">
-	            		<a href="https://fr.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" id="linkedin"></i></a>
-				<a href="https://github.com/" target="_blank"> <i class="fa fa-github" id="github"></i></a>
-                  <a href="https://fr.viadeo.com/fr/" target="_blank"> <i class="fa fa-viadeo-square" id="viadeo"></i></a>
-				<a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a>
-			</div>
-	            	<div class="modal-body">
-  				<h5 class="text">Développeur Front End Web et Mobile - Certifié RNCP</h5>
-  				<div class="test1">
-  					<span class="label btn-sm btn-success">HTML5</span>
-	 				<span class="label btn-sm btn-warning">CSS3</span>
-	 				<span class="label btn-sm btn-danger">JS</span>
-	 				<span class="label btn-sm btn-info">REACT</span>
-	 				<span class="label btn-sm btn-primary">PYTHON</span>
-	 				<span class="label btn-sm btn-secondary">SCRUM</span>
-  				</div>
-              		 </div>
-			 <hr>
- 			 <h4>HOBBIES</h4>
-  		        	<p class="text">Apéro - Badminton - Cinéma - Balade en foret</p>
-  			<hr>
-  			<h4>EXPERIENCES </h4>
-  				<div class="text">
-  					<p>Amazon France - Développeur Java 07/2017 - 05/2018</p>
-	  				<p> Google France - Développeur Back End PHP 02/2016 - 05/2017</p>
-              				<p>Crédit Agricole Lyon - Développeur Javascript 11/2015 - 01/2016</p>
+    <!-- DEBUT MODALES  -->
+    <div class="container">
+            <div class="modal fade" id="monModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered blabla no-gutters" role="document">
+                <div class="modal-content">
+      
+                  <div class="container modal-header">
+                    <p class="h3 modal-title text-center" id="exampleModalCenterTitle">Leknaat Silverberg</p>
                   </div>
-                  <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary close" data-dismiss="modal">Close</button>
+                  <hr>
+                  <div class="modal-body">
+                      <div class="container">
+                          <p class="h4"><span class="logoSW">z</span> Profile <span class="logoSW">z</span><p>
+                          <a href="https://fr.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" id="linkedin"></i></a>
+                          <a href="https://github.com/" target="_blank"> <i class="fa fa-github" id="github"></i></a>
+                          <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a>
+                          <p class="h5 text">Développeur Front End Web et Mobile - Certifié RNCP</p>
+                          <div class="test1">
+                              <span class="badge badge-pill tagHtml">Html5</span>
+                              <span class="badge badge-pill tagCss">Css3</span>
+                              <span class="badge badge-pill tagJS">JavaScript</span>
+                              <span class="badge badge-pill tagJava">Java</span>
+                              <span class="badge badge-pill tagReact">ReactJS</span>
+                              <span class="badge badge-pill tagBootstrap">Bootstrap</span>
+                              <span class="badge badge-pill tagNode">NodeJS</span>
+                          </div>
                       </div>
-  		     	</div>
-        	 </div>
-        </div>
-       </div>
+      
+                      <hr>
+                      
+                      <div class="container">
+                          <p class="h4"><span class="logoSW">f</span> Hobbies <span class="logoSW">f</span><p>
+                          <ul class="listPerso">
+                              <li>Apéro - </li>
+                              <li>Badminton - </li>
+                              <li>Cinéma - </li>
+                              <li>Promenade en forêt - </li>
+                              <li>Jeux vidéos</li>
+                          </ul>
+                      </div>
+                  
+                      <hr>
+      
+                      <div class="container">
+                          <p class="h4"><span class="logoSW">D</span> Experiences <span class="logoSW">D</span><p>    
+                          <p>Amazon France - Développeur Java 07/2017 - 05/2018<br>
+                             Google France - Développeur Back End PHP 02/2016 - 05/2017<br>
+                             Crédit Agricole Lyon - Développeur Javascript 11/2015 - 01/2016</p>
+                      </div>
+                  </div>
+                  
+                  <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary close" data-dismiss="modal">Close <span class="logoSWbutton">_</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
+ <!-- FIN MODALES  -->
 
 
 
@@ -229,4 +261,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
