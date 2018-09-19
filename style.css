@@ -51,7 +51,7 @@ body, html{
 #mainbg{
 
 
-	background-image: url(http://image.noelshack.com/fichiers/2018/37/3/1536744147-tatooine-star-wars.png);
+	background-image: url(http://image.noelshack.com/fichiers/2018/38/3/1537361273-tatooine-star-wars-red2.png);
 	background-size: cover;
 }
 
@@ -65,34 +65,157 @@ body, html{
 
 /* DEBUT Partie animation vignettes */
 
-.cardimg{
 
-	margin-top: 20px;
-	margin-bottom: 20px;
+@media (any-hover: hover) {
+
+		.cardimg{
+
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.cf {
+			position:relative;
+			height:200px;
+			width:200px;
+			margin:0 auto;
+			border: #EBD71C solid 3px;
+		}
+
+			
+		.cf img {
+			position:absolute;
+			left:0;
+			-webkit-transition: opacity 1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			padding: 7px;
+			}
+			
+		.cf img.top:hover {
+			opacity:0;
+			cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+			}
+			
+		.nomVign > p {
+			font-family: "starjedi";
+			color: #17a2b8;
+			font-size: 1em;
+			margin: 10px auto !important;
+			visibility: hidden !important;
+			opacity: 0;
+			-webkit-transition:  1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 7px;
+			width: 65%;
+			padding-left: 4px;
+			padding-right: 4px;
+			padding-bottom: 1px;
+		}
+
+		.cf:hover + .nomVign > p{
+			visibility: visible !important;
+			opacity: 1;
+			cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+		}
+
+		hr.style14 { 
+			
+			border: 0; 
+			height: 1px; 
+			margin-top: 0px;
+			background-image: -webkit-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+			background-image: -moz-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+			background-image: -ms-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+			background-image: -o-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8); 
+			visibility: hidden !important;
+			opacity: 0;
+			-webkit-transition:  1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+		}
+
+		.cf:hover + .nomVign > hr.style14{
+			visibility: visible !important;
+			opacity: 1;
+			cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+		}
 }
 
-.cf {
-	position:relative;
-	height:200px;
-	width:200px;
-	margin:0 auto;
-	border: #EBD71C solid 3px;	
-}
 
-  
-.cf img {
-	position:absolute;
-	left:0;
-	-webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-o-transition: opacity 1s ease-in-out;
-	transition: opacity 1s ease-in-out;
-	padding: 7px;
-  }
-  
-.cf img.top:hover {
-	opacity:0;
-  }
+/* Pour ceux qui n'ont pas de HOVER*/
+
+@media (hover: none){
+
+	.cardimg{
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.cf {
+		position:relative;
+		height:200px;
+		width:200px;
+		margin:0 auto;
+		border: #EBD71C solid 3px;
+	}
+
+		
+	.cf img {
+		position:absolute;
+		left:0;
+		-webkit-transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+		padding: 7px;
+		}
+
+		.nomVign > p {
+			font-family: "starjedi";
+			color: #17a2b8;
+			font-size: 1em;
+			margin: 10px auto !important;
+
+			-webkit-transition:  1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 7px;
+			width: 65%;
+			padding-left: 4px;
+			padding-right: 4px;
+			padding-bottom: 1px;
+		}
+		hr.style14 { 
+			
+			border: 0; 
+			height: 1px; 
+			margin-top: 0px;
+			background-image: -webkit-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+			background-image: -moz-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+			background-image: -ms-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+			background-image: -o-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8); 
+			visibility: hidden !important;
+			opacity: 0;
+			-webkit-transition:  1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+		}
+
+		img.top{
+			opacity: 0;
+		}
+
+}
 
 
 /* FIN Partie animation vignettes */
@@ -101,7 +224,7 @@ body, html{
 /* DEBUT Partie STAR WARS  */
 
 .star-wars-intro {
-	background: url("images/fond1.png") center center;
+	background: url(http://image.noelshack.com/fichiers/2018/38/3/1537369367-fond1.png) center center;
 	width: 100%;
 	height: 100%;
 	font-family: "Droid Sans", arial, verdana, sans-serif;
@@ -125,7 +248,7 @@ body, html{
 	font-size: 200%;
 	font-weight: 400;
 	margin: 20% auto;
-	color: #4ee;
+	color: #17a2b8;
 	opacity: 0;
 	z-index: 1;
 	text-align: center;
@@ -149,7 +272,7 @@ body, html{
 	text-align: justify;
 	overflow: hidden;
 	transform-origin: 50% 100%;
-	transform: perspective(350px) rotateX(25deg);
+	transform: perspective(550px) rotateX(25deg);
   }
   
   .star-wars-intro .main-content:after {
@@ -162,27 +285,30 @@ body, html{
   }
   
   .star-wars-intro .space-button {
-	color: #EBD71C;
-	border: 12px solid #EBD71C;
+	color: #17a2b8;
+	/*border: 12px solid #17a2b8;*/
 	padding: 20px;
+	width: 80%;
 	background: transparent;
 	text-decoration: none;
 	margin: 0 auto;
 	display: block;
 	text-align: center;
+	font-family: "starjedi", sans-serif;
+	white-space: nowrap;
   }
   
   .star-wars-intro .space-button:hover {
-	background-color: #D2BE03;
-	border-color: #D2BE03;
-	color: black;
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+	color: white;
   }
   
   .star-wars-intro .space-button:active,
   .star-wars-intro .space-button:focus {
-	background-color: #B8A40A;
-	border-color: #B8A40A;
-	color: black;
+		background-color: #17a2b8;
+		border-color: #17a2b8;
+		color: white;
   }
   
   .star-wars-intro .title-content {
@@ -295,9 +421,9 @@ body, html{
 	.star-wars-intro .title-content {
 	  position: absolute;
 	  top: 100%;
-	  animation: scroll 110s linear 2s forwards;
+	  animation: scroll 50s linear 2s forwards;
 	}
-	}
+}
 
 	/* FIN DE STARWARS */
 	
@@ -344,7 +470,7 @@ body, html{
 @media(min-width:992px){
 	.blabla{
 
-		width: 45%;
+		width: 50%;
 		margin: auto;
 		text-align: center;
 	}
@@ -373,6 +499,11 @@ body, html{
 	width: 100%;
 	font-family: "starjedi", sans-serif;
 	color: rgb(92, 86, 71);
+}
+
+.listPerso{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
 
 .listPerso li{
@@ -471,6 +602,7 @@ p{
 .badge-pill{
 	font-size: 1rem;
 	padding-top: 6px;
+	margin-top: 5px;
 }
 
 .tagHtml{
@@ -500,6 +632,14 @@ p{
 .tagNode{
 	background-color: rgb(12, 145, 63);
 	color: rgb(26, 25, 22);
+}
+.tagPHP{
+	background-color: rgb(171, 66, 192);
+	color: #000;
+}
+.tagSQL{
+	background-color: rgb(83, 78, 65);
+	color: rgb(209, 162, 6);
 }
 
 	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */	/* FIN MODALES */
