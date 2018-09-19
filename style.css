@@ -35,6 +35,11 @@ font-size: 3rem;
 	height: 100px;
 }
 
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+
 /*fin de section test */
 
 
@@ -65,8 +70,87 @@ body, html{
 
 /* DEBUT Partie animation vignettes */
 
+/* Premier volée de css pour FIREFOX en attendant de trouver une solution propre */
 
-@media (any-hover: hover) {
+	.cardimg{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.cf {
+		position:relative;
+		height:200px;
+		width:200px;
+		margin:0 auto;
+		border: #EBD71C solid 3px;
+	}
+
+	.cf img {
+		position:absolute;
+		left:0;
+		-webkit-transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+		padding: 7px;
+		}
+
+	.cf img.top:hover {
+		opacity:0;
+		cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+		}
+		
+	.nomVign > p {
+		font-family: "starjedi";
+		color: #17a2b8;
+		font-size: 1em;
+		margin: 10px auto !important;
+		visibility: hidden !important;
+		opacity: 0;
+		-webkit-transition:  1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 7px;
+		width: 65%;
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-bottom: 1px;
+	}
+
+	.cf:hover + .nomVign > p{
+		visibility: visible !important;
+		opacity: 1;
+		cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+	}
+
+	hr.style14 { 
+		
+		border: 0; 
+		height: 1px; 
+		margin-top: 0px;
+		background-image: -webkit-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+		background-image: -moz-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+		background-image: -ms-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8);
+		background-image: -o-linear-gradient(left, #17a2b8, #EBD71C, #17a2b8); 
+		visibility: hidden !important;
+		opacity: 0;
+		-webkit-transition:  1s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+	}
+
+	.cf:hover + .nomVign > hr.style14{
+		visibility: visible !important;
+		opacity: 1;
+		cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+	}
+
+/* Fin de la volée pour Firefox + Début des 2 médias queries pour tous les autres browsers adaptant le comportement des vignettes aux dispositifs sans survol*/
+
+@media all and (any-hover: hover) {
 
 		.cardimg{
 
@@ -146,7 +230,6 @@ body, html{
 			cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
 		}
 }
-
 
 /* Pour ceux qui n'ont pas de HOVER*/
 
